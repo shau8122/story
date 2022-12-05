@@ -1,0 +1,488 @@
+Shauk@LAPTOP-01N3CP89 MINGW64 ~
+$ cd desktop
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop
+$ mkdir story
+mkdir: cannot create directory ‘story’: File exists
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop
+$ cd story
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ touch chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ ope chapter1.txt
+bash: ope: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ open chapter1.txt
+bash: open: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ .open chapter1.txt
+bash: .open: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ notepad chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ git init
+Initialized empty Git repository in C:/Users/Shauk/Desktop/story/.git/
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ ls -a
+./  ../  .git/  chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git commit -m "Complete chapter 1"
+[master (root-commit) cc0a005] Complete chapter 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit cc0a0059193b667e9fb26fcb7139e038287da39a (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ touch chapter2.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ touch chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter2.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add chapter2.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add .
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ status
+bash: status: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git commit -m "complete chapter2"
+[master 79de4cc] complete chapter2
+ 2 files changed, 2 insertions(+)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit 79de4cc8025fb9965b28fdbb56ad62dab8d3a285 (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:32:02 2022 +0530
+
+    complete chapter2
+
+commit cc0a0059193b667e9fb26fcb7139e038287da39a
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 4b2ea5a..e33cd05 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-it was the age of spring
+\ No newline at end of file
++duehadvuit was the age of spring
+\ No newline at end of file
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git checkout chapter3.txt
+Updated 1 path from the index
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit 79de4cc8025fb9965b28fdbb56ad62dab8d3a285 (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:32:02 2022 +0530
+
+    complete chapter2
+
+commit cc0a0059193b667e9fb26fcb7139e038287da39a
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit 79de4cc8025fb9965b28fdbb56ad62dab8d3a285 (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:32:02 2022 +0530
+
+    complete chapter2
+
+commit cc0a0059193b667e9fb26fcb7139e038287da39a
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git remote add origin https://github.com/shau8122/story.git
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ push -u origin master
+bash: push: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 583 bytes | 583.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shau8122/story.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ ^C
+Shauk@LAPTOP-01N3CP89 MINGW64 ~
+$ cd desktop
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop
+$ mkdir story
+mkdir: cannot create directory ‘story’: File exists
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop
+$ cd story
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ touch chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ ope chapter1.txt
+bash: ope: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ open chapter1.txt
+bash: open: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ .open chapter1.txt
+bash: .open: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ notepad chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story
+$ git init
+Initialized empty Git repository in C:/Users/Shauk/Desktop/story/.git/
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ ls -a
+./  ../  .git/  chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git commit -m "Complete chapter 1"
+[master (root-commit) cc0a005] Complete chapter 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit cc0a0059193b667e9fb26fcb7139e038287da39a (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ touch chapter2.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ touch chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter2.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add chapter2.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git add .
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ status
+bash: status: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git commit -m "complete chapter2"
+[master 79de4cc] complete chapter2
+ 2 files changed, 2 insertions(+)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit 79de4cc8025fb9965b28fdbb56ad62dab8d3a285 (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:32:02 2022 +0530
+
+    complete chapter2
+
+commit cc0a0059193b667e9fb26fcb7139e038287da39a
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 4b2ea5a..e33cd05 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-it was the age of spring
+\ No newline at end of file
++duehadvuit was the age of spring
+\ No newline at end of file
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git checkout chapter3.txt
+Updated 1 path from the index
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit 79de4cc8025fb9965b28fdbb56ad62dab8d3a285 (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:32:02 2022 +0530
+
+    complete chapter2
+
+commit cc0a0059193b667e9fb26fcb7139e038287da39a
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ notepad chapter3.txt
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git log
+commit 79de4cc8025fb9965b28fdbb56ad62dab8d3a285 (HEAD -> master)
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:32:02 2022 +0530
+
+    complete chapter2
+
+commit cc0a0059193b667e9fb26fcb7139e038287da39a
+Author: shau8122 <shau8122@kgpian.iitkgp.ac.in>
+Date:   Sun Nov 20 19:25:57 2022 +0530
+
+    Complete chapter 1
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git remote add origin https://github.com/shau8122/story.git
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ push -u origin master
+bash: push: command not found
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 583 bytes | 583.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shau8122/story.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Shauk@LAPTOP-01N3CP89 MINGW64 ~/desktop/story (master)
+$ ^C
